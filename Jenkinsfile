@@ -6,7 +6,7 @@ node {
     stage ('Build'){
         echo "whvaaah shira?"
         sh "./gradlew clean test jar"
-        echo "Hvorfor ikke???"
+        echo "Hvorfor funker det ikke???"
     }
     stage ('Result'){
         echo "whvaaah shira?"

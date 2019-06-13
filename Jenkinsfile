@@ -1,11 +1,12 @@
-pipeline {
-    agent any
-    
-    stages {
-        stage('greetings') {
-            steps{
-                echo 'Holla Mundos!'
-            }
-        }
+node {
+    stage ('Preperation'){
+        echo "whvaaah shira?"
+
+    }
+    stage ('Build'){
+        echo "whvaaah shira?"
+    }
+    stage ('Result'){
+        echo "whvaaah shira?"
     }
 }

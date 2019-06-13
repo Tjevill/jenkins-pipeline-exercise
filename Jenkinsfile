@@ -10,5 +10,6 @@ node {
     }
     stage ('Result'){
         echo "whvaaah shira?"
+        junit "**/build/test-results/test/TEST-*.xml"
     }
 }

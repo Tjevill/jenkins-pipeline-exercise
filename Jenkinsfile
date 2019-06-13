@@ -9,7 +9,7 @@ node {
         echo "Hvorfor funker det ikke???"
     }
     stage ('Result'){
-        echo "Added junit result"
+        echo "Added junit result. Still not automatic..."
         junit "**/build/test-results/test/TEST-*.xml"
     }
 }

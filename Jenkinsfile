@@ -1,7 +1,7 @@
-node {
+pipeline {
     
     agent any
-    
+
     stages{
         stage ('Preperation'){
             echo "whvaaah shira?"

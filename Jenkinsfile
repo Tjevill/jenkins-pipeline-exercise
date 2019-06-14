@@ -4,16 +4,15 @@ pipeline {
 
     stages{
         stage ('Preperation'){
-            echo "whvaaah shira?"
+            echo "stage Preperation"
 
         }
         stage ('Build'){
-            echo "whvaaah shira?"
-            sh "./gradlew clean test jar"
-            echo "Hvorfor funker det ikke???"
+            echo "stage Build"
+            sh './gradlew clean test jar'
         }
         stage ('Result'){
-            echo "Added junit result. Still not automatic..."
+            echo "stage Result"
             junit "**/build/test-results/test/TEST-*.xml"
         }
     }
